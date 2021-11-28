@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Đoán số</title>
+</head>
+
+<body>
+
+    <h2 style="text-transform: uppercase;"> Bắt đầu chơi game đoán số nào</h2>
+
+    <button id="btn" onclick="game()">play game</button>
+
+</body>
+
+<script>
+
+    function game() {
+        let n = Math.floor(Math.random() * 10);
+        let m = parseInt(prompt('hãy nhập số của bạn vào đây:'));
+
+        for (i = 0; i < 3; i = i + 1) {
+            if (m === n) {
+                alert('xin chúc mừng bạn đã đoán đúng');
+            } else if (m > n) {
+                alert ('số bạn nhập cao quá,vui lòng nhâp lại');
+            } else if (m < n) {
+                alert ('số bạn nhập nhỏ quá,vui lòng nhâp lại');
+
+            }
+
+        }
+
+    }
+
+
+
+</script>
+
+</html>
