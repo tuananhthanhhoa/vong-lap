@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dãy số fibonacci</title>
+</head>
+<body>
+
+
+    <script>
+        // n là dãy số fibonacci
+        let n = prompt('nhập n')
+        let a = 0;
+        let b = 1;
+        let i = 3;
+        document.write(a+','+b);
+        while(i<=n){
+            c=a+b;
+            a=b;
+            b=c;
+            document.write(','+c);
+
+            i = i+1;
+        }
+    </script>
+    
+</body>
+</html>
