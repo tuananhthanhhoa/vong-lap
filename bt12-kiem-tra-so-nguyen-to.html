@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiểm tra số nguyên tố</title>
+</head>
+<body>
+
+
+    <script>
+
+        let numbers = parseInt(prompt('nhập số vào đây'));
+        let count = 0;
+        let N;
+        let check = true;
+        for(N=2;N<=numbers;N++){
+            if(N%numbers==0){
+                check=false;
+                break;
+            }
+            // count=numbers;
+            // count++;
+
+            // document.write(count);
+        }
+
+        if(check==true){
+            alert(N+'là số nguyên tố');
+        }else{
+            alert(N+'không phải số nguyên tố');
+
+        }
+       
+    </script>
+    
+</body>
+</html>
